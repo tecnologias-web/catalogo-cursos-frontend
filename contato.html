@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Faculdade Impacta | Contato</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img alt="logo da faculdade Impacta" src="imagens/impacta-logo.png" />
+            </a>
+            <a href="sobre.html">Sobre a Faculdade</a>
+            <a href="contato.html">Contato</a>
+            <div>
+                Cursos
+                <div>
+                    <a href="cursos/ads.html">Análise e Desenvolvimento e Sistemas</a>
+                    <a href="cursos/bd.html">Banco de Dados</a>
+                    <a href="cursos/gti.html">Gestão da Tecnologia da Informação</a>
+                    <a href="cursos/si.html">Sistemas da Informação</a>
+                </div>
+            </div>
+            <a href="entrar.html">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Entre em Contato Conosco</h1>
+        <form method="POST">
+            <div>
+                <label for="campo-nome">Nome:</label>
+                <input type="text" id="campo-nome" name="nome" required />
+            </div>
+            <div>
+                <label for="campo-email">E-Mail:</label>
+                <input type="email" id="campo-email" name="email" required />
+            </div>
+            <div>
+                <label for="campo-assunto">Assunto:</label>
+                <select id="campo-assunto" name="assunto" required>
+                    <option value=""> - Selecione um - </option>
+                    <option value="B">Bug</option>
+                    <option value="S">Sugestão</option>
+                    <option value="R">Reclamação</option>
+                </select>
+            </div>
+            <div>
+                <label for="campo-mensagem">Campo Mensagem:</label>
+                <textarea id="campo-mensagem" required name="mensagem" maxlength="100" placeholder="Digite a sua mensagem..." ></textarea>
+            </div>
+            <fieldset>
+                <legend>Como você conheceu a Impacta?</legend>
+                <label for="campo-conheceu-google">Google:</label>
+                <input type="radio" name="conheceu" id="campo-conheceu-google" value="GOOGLE" />
+                <label for="campo-conheceu-podcasts">Podcasts:</label>
+                <input type="radio" name="conheceu" id="campo-conheceu-podcasts" value="PODCASTS" />
+                <label for="campo-conheceu-radio">Radio:</label>
+                <input type="radio" name="conheceu" id="campo-conheceu-radio" value="RADIO" />
+            </fieldset>
+            <div>
+                <input type="submit" value="Enviar Mensagem" />
+                <input type="reset" value="Limpar" />
+                <input type="button" value="Botão" />
+
+
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/FacImpacta/" target="blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/faculdadeimpacta/" target="blank">Instagram</a>
+            </li>
+            
+            <li>
+                <a href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006/" target="blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/facimpacta/" target="blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/GrupoImpacta/" target="blank">Youtube</a>
+            </li>
+        </ul>
+        <p>2020 Faculdade Impacta 11 3254-8300 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
