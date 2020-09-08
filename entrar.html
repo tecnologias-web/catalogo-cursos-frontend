@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Faculdade Impacta | Login</title>
+=======
+    <title>Faculdade Impacta | Entrar</title>
+>>>>>>> Aula02-Forms
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -26,22 +30,24 @@
         </nav>
     </header>
     <main>
-        <h1>Faça o seu Login</h1>
-        <form method="POST" action="index.html">
+        <h1>Faça o seu login</h1>
+        <form method="POST">
             <div>
-                <label for="campo-usuario">Usuário:</label>
-                <input id="campo-usuario" name="usuario" type="text" placeholder="Digite seu usuário" required />
+                <label for="login-usuario">Usuário</label>
+                <input type="text" id="login-usuario" name="usuario" />
             </div>
             <div>
-                <label for="campo-senha">Senha:</label>
-                <input id="campo-senha" name="senha" type="password" required />
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" name="senha" />
             </div>
             <div>
-                <label for="campo-lembrar">Lembrar de Mim?</label>
-                <input id="campo-lembrar" name="lembrar" type="checkbox" value="SIM" />
+                <label for="login-lembrar">Lembrar de mim</label>
+                <input type="checkbox" id="login-lembrar" name="lembrar" value="SIM" />
             </div>
             <div>
-                <button>Fazer Login</button>
+                <button type="submit">
+                    Fazer Login
+                </button>
             </div>
         </form>
     </main>

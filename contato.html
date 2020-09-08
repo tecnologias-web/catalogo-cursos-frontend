@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Faculdade Impacta | Contato</title>
+=======
+    <title>Faculdade Impacta | Entrar</title>
+>>>>>>> Aula02-Forms
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -26,46 +30,50 @@
         </nav>
     </header>
     <main>
-        <h1>Entre em Contato Conosco</h1>
+        <h1>Entre em contato conosco!</h1>
         <form method="POST">
             <div>
-                <label for="campo-nome">Nome:</label>
-                <input type="text" id="campo-nome" name="nome" required />
+                <label for="contato-nome">Nome</label>
+                <input type="text" 
+                       id="contato-nome" 
+                       name="nome"
+                       required
+                       maxlength="30"
+                       autofocus/>
             </div>
             <div>
-                <label for="campo-email">E-Mail:</label>
-                <input type="email" id="campo-email" name="email" required />
+                <label for="contato-email">E-Mail</label>
+                <input type="email" id="contato-email" name="email" required />
             </div>
             <div>
-                <label for="campo-assunto">Assunto:</label>
-                <select id="campo-assunto" name="assunto" required>
-                    <option value=""> - Selecione um - </option>
+                <label for="contato-assunto">Assunto</label>
+                <select name="assunto" id="contato-assunto" required>
+                    <option value="">Selecione uma opção</option>
                     <option value="B">Bug</option>
-                    <option value="S">Sugestão</option>
                     <option value="R">Reclamação</option>
+                    <option value="S">Sugestão</option>
                 </select>
             </div>
             <div>
-                <label for="campo-mensagem">Campo Mensagem:</label>
-                <textarea id="campo-mensagem" required name="mensagem" maxlength="100" placeholder="Digite a sua mensagem..." ></textarea>
+                <label for="contato-mensagem">Mensagem</label>
+                <textarea name="mensagem" id="contato-mensagem" required maxlength="120"></textarea>
             </div>
             <fieldset>
                 <legend>Como você conheceu a Impacta?</legend>
-                <label for="campo-conheceu-google">Google:</label>
-                <input type="radio" name="conheceu" id="campo-conheceu-google" value="GOOGLE" />
-                <label for="campo-conheceu-podcasts">Podcasts:</label>
-                <input type="radio" name="conheceu" id="campo-conheceu-podcasts" value="PODCASTS" />
-                <label for="campo-conheceu-radio">Radio:</label>
-                <input type="radio" name="conheceu" id="campo-conheceu-radio" value="RADIO" />
+                <label for="contato-conheceu-google">Google Ads</label>
+                <input type="radio" name="conheceu" id="contato-conheceu-google" value="GOOGLE" />
+                <label for="contato-conheceu-podcasts">Podcasts</label>
+                <input type="radio" name="conheceu" id="contato-conheceu-podcasts" value="PODCASTS" />
+                <label for="contato-conheceu-tv">TV</label>
+                <input type="radio" name="conheceu" id="contato-conheceu-tv" value="TV" />
             </fieldset>
             <div>
-                <input type="submit" value="Enviar Mensagem" />
-                <input type="reset" value="Limpar" />
-                <input type="button" value="Botão" />
-
-
-                <button type="submit">Enviar Mensagem</button>
-                <button type="reset">Limpar</button>
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+                <button type="reset">
+                    Limpar Formulário
+                </button>
             </div>
         </form>
     </main>
@@ -77,7 +85,6 @@
             <li>
                 <a href="https://www.instagram.com/faculdadeimpacta/" target="blank">Instagram</a>
             </li>
-            
             <li>
                 <a href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006/" target="blank">Linkedin</a>
             </li>
