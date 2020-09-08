@@ -1,0 +1,13 @@
+.premios {
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+}
+
+.premio {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    text-align: center;
+}
+
+.premio h3 {
+    color: var(--cor-branca);
+}

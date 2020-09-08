@@ -1,0 +1,90 @@
+:root {
+    --cor-azul: #116fff;
+    --cor-branca: #fff;
+    --cor-cinza-claro: #ededed;
+    --cor-cinza-escuro: #696969;
+    --cor-escura: #020d13;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-azul);
+}
+
+h1 {
+    text-align: center;
+}
+
+/**
+ * Estilos Cabeçalho
+ */
+.cabecalho {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+}
+
+.logo {
+    width: 170px;
+}
+
+.item-menu {
+    color: var(--cor-branca);
+    font-weight: 500;
+}
+
+.item-menu:hover {
+    border-bottom: 3px solid yellow;
+}
+
+.dropdown-menu .item-menu:hover {
+    background-color: var(--cor-azul);
+    border-bottom: 0;
+}
+
+/** 
+ * Estilos Rodapé
+ */
+.rodape {
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branca);
+    text-align: center;
+}
+
+.media-list {
+    list-style: none;
+}
+
+.media-link {
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--cor-branca);
+}
+
+.media-link.facebook { background-image: url("imagens/facebook-3-64.png"); }
+.media-link.linkedin { background-image: url("imagens/linkedin-3-64.png"); }
+.media-link.instagram { background-image: url("imagens/instagram-64.png"); }
+.media-link.twitter { background-image: url("imagens/twitter-3-64.png"); }
+.media-link.youtube { background-image: url("imagens/youtube-64.png"); }
+
+ /**
+  * Estilos de Botões 
+  */
+.botao {
+    background-color: var(--cor-azul);
+    border-radius: 16px;
+    color: var(--cor-branca);
+    font-weight: 500;
+}
