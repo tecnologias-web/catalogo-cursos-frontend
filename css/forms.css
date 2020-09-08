@@ -1,0 +1,13 @@
+input, select, textarea {
+    border-radius: 4px;
+    border: 1px solid var(--cor-cinza-claro);
+    width: 100%;
+}
+
+.acoes {
+    text-align: center;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: initial;
+}

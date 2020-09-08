@@ -4,6 +4,8 @@
     --cor-cinza-claro: #ededed;
     --cor-cinza-escuro: #696969;
     --cor-escura: #020d13;
+    --cor-verde: #45a049;
+    --cor-vermelho: red;
 }
 
 * {
@@ -84,7 +86,18 @@ h1 {
   */
 .botao {
     background-color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
     border-radius: 16px;
     color: var(--cor-branca);
     font-weight: 500;
+}
+
+.botao.enviar {
+    background-color: var(--cor-verde);
+    border: 1px solid var(--cor-verde);
+}
+
+.botao.limpar {
+    background-color: var(--cor-vermelho);
+    border: 1px solid var(--cor-vermelho);
 }
