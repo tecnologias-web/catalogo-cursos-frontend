@@ -1,0 +1,15 @@
+.sobre {
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.empresa {
+    text-align: center;
+}
+
+.lista-valores {
+    list-style: none;
+}
