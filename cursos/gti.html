@@ -3,32 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Faculdade Impacta | Banco de Dados</title>
+    <title>Faculdade Impacta | Gestão da Tecnologia da Informação</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/cursos.css" />
 </head>
-
 <body>
-    <header>
+    <header class="cabecalho">
         <nav>
             <a href="../index.html">
-                <img alt="logo da faculdade Impacta" src="../imagens/impacta-logo.png" />
+                <img alt="logo da faculdade Impacta" class="logo" src="../imagens/impacta-logo.png" />
             </a>
-            <a href="../sobre.html">Sobre a Faculdade</a>
-            <a href="../contato.html">Contato</a>
+            <a class="item-menu" href="../sobre.html">Sobre a Faculdade</a>
+            <a class="item-menu" href="../contato.html">Contato</a>
             <div>
                 Cursos
-                <div>
-                    <a href="ads.html">Análise e Desenvolvimento e Sistemas</a>
-                    <a href="bd.html">Banco de Dados</a>
-                    <a href="gti.html">Gestão da Tecnologia da Informação</a>
-                    <a href="si.html">Sistemas da Informação</a>
+                <div class="dropdown-menu">
+                    <a class="item-menu" href="ads.html">Análise e Desenvolvimento e Sistemas</a>
+                    <a class="item-menu" href="bd.html">Banco de Dados</a>
+                    <a class="item-menu" href="gti.html">Gestão da Tecnologia da Informação</a>
+                    <a class="item-menu" href="si.html">Sistemas da Informação</a>
                 </div>
             </div>
-            <a href="../entrar.html">Entrar</a>
+            <a class="botao" href="../entrar.html">Entrar</a>
         </nav>
     </header>
     <main>
         <h1>Gestão da Tecnologia da Informação</h1>
-        <section>
+        <section class="sobre-curso">
             <h2>Sobre o Curso</h2>
             <p>
                 As tecnologias estão em toda parte. Órgãos públicos, privados 
@@ -67,7 +69,7 @@
             </section>
             <section>
                 <h3>Investimento</h3>
-                <table>
+                <table class="investimento">
                     <thead>
                         <tr>
                             <th>Período</th>
@@ -87,7 +89,7 @@
         </section>
         <section>
             <h2>Matriz Curricular</h2>
-            <ul>
+            <ul class="matriz-curricular">
                 <li>1º Semestre:
                     <ul>
                         <li>Fundamentos de Banco de Dados: 80 horas</li>
@@ -141,27 +143,25 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <ul>
+    <footer class="rodape">
+        <ul class="media-list">
             <li>
-                <a href="https://www.facebook.com/FacImpacta/" target="blank">Facebook</a>
+                <a class="media-link facebook" href="https://www.facebook.com/FacImpacta/" target="blank">Facebook</a>
             </li>
             <li>
-                <a href="https://www.instagram.com/faculdadeimpacta/" target="blank">Instagram</a>
-            </li>
-
-            <li>
-                <a href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006/" target="blank">Linkedin</a>
+                <a class="media-link instagram" href="https://www.instagram.com/faculdadeimpacta/" target="blank">Instagram</a>
             </li>
             <li>
-                <a href="https://twitter.com/facimpacta/" target="blank">Twitter</a>
+                <a class="media-link linkedin" href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006/" target="blank">Linkedin</a>
             </li>
             <li>
-                <a href="https://www.youtube.com/user/GrupoImpacta/" target="blank">Youtube</a>
+                <a class="media-link twitter" href="https://twitter.com/facimpacta/" target="blank">Twitter</a>
+            </li>
+            <li>
+                <a class="media-link youtube" href="https://www.youtube.com/user/GrupoImpacta/" target="blank">Youtube</a>
             </li>
         </ul>
         <p>2020 Faculdade Impacta 11 3254-8300 Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
