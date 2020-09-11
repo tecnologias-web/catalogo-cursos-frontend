@@ -29,9 +29,17 @@ strong {
 }
 
 .matriz-curricular {
+    color: var(--cor-branca);
     list-style: none;
 }
 
 .matriz-curricular ul {
+    background-color: var(--cor-escura);
     list-style: none;
+    font-weight: normal;
+}
+
+.matriz-curricular > li {
+    background-color: var(--cor-cinza-escuro);
+    font-weight: bold;
 }
