@@ -1,13 +1,48 @@
 .premios {
     border-bottom: 1px solid var(--cor-cinza-escuro);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.premios h2 {
+    width: 100%;
 }
 
 .premio {
     background-color: var(--cor-escura);
+    border-radius: 10px;
     color: var(--cor-branca);
+    margin: 8px 0;
+    padding: 15px 10px;
     text-align: center;
+    width: 500px;
+}
+
+.premio h2, .premio h3 {
+    margin: 0;
 }
 
 .premio h3 {
     color: var(--cor-branca);
+}
+
+.smartclass {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.smartclass h2 {
+    width: 100%;
+}
+
+.smartclass p {
+    flex: 0 0 50%;
+}
+
+.smartclass img {
+    order: 1;
+    width: 350px;
 }
