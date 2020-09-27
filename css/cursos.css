@@ -1,7 +1,34 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main h1 {
+    width: 100%;
+}
+
+main section:nth-of-type(2) {
+    flex: 1;
+    padding: 8px 10px;
+}
+
+main section:nth-of-type(3) {
+    width: 100%;
+}
+
 .sobre-curso {
     background-color: var(--cor-cinza-escuro);
     border: 1px solid var(--cor-cinza-escuro);
     color: var(--cor-branca);
+    flex: 0 0 65%;
+    padding: 8px 10px;
+}
+
+.sobre-curso h2 {
+    margin: 0;
+}
+.sobre-curso p {
+    text-align: justify;
 }
 
 strong {
@@ -37,9 +64,26 @@ strong {
     background-color: var(--cor-escura);
     list-style: none;
     font-weight: normal;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
 }
 
 .matriz-curricular > li {
     background-color: var(--cor-cinza-escuro);
+    border-bottom: 1px solid var(--cor-grafite);
+    cursor: pointer;
     font-weight: bold;
+    text-indent: 10px;
+    padding-top: 5px;
+}
+
+.matriz-curricular ul > li {
+    border-bottom: 1px solid var(--cor-grafite);
+    padding: 8px 5px;
+    cursor: text;
+}
+
+.matriz-curricular ul > li:hover {
+    border-color: var(--cor-azul);
 }
