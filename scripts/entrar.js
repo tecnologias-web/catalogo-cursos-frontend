@@ -1,24 +1,20 @@
-const dados = {
-    usuario: 'usuario',
-    senha: 'teste1'
-}, erros = []
+const form = document.querySelector('form')
 
-if(!dados.usuario) {
-    erros.push('Usuário é de preenchimento obrigatório!')
-}
+form.addEventListener('submit', function(event){
+    let erroUL = form.querySelector('ul.erros'),
+        usuario = form.querySelector('input[name="usuario"]').value,
+        senha = form.querySelector('input[name="senha"]').value
+    
+    if(erroUL.innerHTML) {
+        event.preventDefault()
+        return
+    } 
 
-if(!dados.senha) {
-    erros.push('Senha é de preenchimento obrigatório!')
-}
-if(validarTamanho(dados.senha, 8, 5)){
-    erros.push('Senhas devem ter entre 5 e 9 caracteres!')
-}
-
-if(!validarUsuarioSenha(dados.usuario, dados.senha)){
-    erros.push('Usuário ou senha incorretos!')
-}
-if(erros.length > 0){
-    imprimirErros(erros)
-} else {
-    console.log('Formulário preenchido com sucesso!')
-}
+    if(usuario === 'admin' && senha === 'teste123*') {
+        alert('Você logou com sucesso!');
+    } else {
+        erroUL.innerHTML += `<li>Usuário e/ou senha incorretos!</li>`
+        erroUL.classList.add('mostrar')
+        event.preventDefault()
+    }
+})
