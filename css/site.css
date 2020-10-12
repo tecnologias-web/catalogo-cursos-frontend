@@ -101,6 +101,10 @@ h1 {
     z-index: 1;
 }
 
+.dropdown-menu.ativo {
+    display: block;
+}
+
 .dropdown-menu .item-menu {
     display: block;
     margin: 0;
