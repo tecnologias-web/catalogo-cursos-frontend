@@ -132,13 +132,67 @@ h1 {
 
 @media screen and (max-width: 650px) {
 
+    .navegacao {
+        display: block;
+        position: relative;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .navegacao.ativo {
+        padding-bottom: 8px;
+    }
+
     .navegacao a:not(:first-child):not(.menu-icone), .navegacao .dropdown {
         display: none;
     }
 
+    .navegacao.ativo a:not(:first-child):not(.menu-icone) {
+        display: block;
+        padding: 8px 8px;
+    }
+
+    .navegacao.ativo .dropdown {
+        display: block;
+        padding: 5px 8px;
+    }
+
+    .navegacao.ativo .dropdown-menu.ativo {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .navegacao.ativo .dropdown-menu .item-menu {
+        background-color: var(--cor-grafite);
+        display: block;
+        padding: 5px 8px;
+    }
+
+    .navegacao.ativo .dropdown-menu .item-menu:not(:last-child){
+        border-bottom: 1px solid var(--cor-cinza-claro);
+    }
+
+    .navegacao.ativo .dropdown-btn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navegacao.ativo .acesso.botao {
+        display: block;
+        width: 6em;
+        text-align: center;
+        margin: 5px auto;
+    }
+
     .menu-icone {
-        display: inline-block;
-        margin-left: auto;
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 10px;
     }
 
 }
